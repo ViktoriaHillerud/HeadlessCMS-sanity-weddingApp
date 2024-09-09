@@ -1,0 +1,88 @@
+.Home {
+	margin-top: 20px;
+}
+
+.fade-in-h1 {
+	animation: fadeInH1 5s ease-in-out;
+	animation-fill-mode: forwards;
+  }
+  
+  @keyframes fadeInH1 {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+  }
+  
+  .fade-in-h2 {
+	animation: fadeInH2 5s ease-in-out;
+	animation-delay: 2.5s;
+	animation-fill-mode: forwards;
+	opacity: 0; 
+  }
+  
+  @keyframes fadeInH2 {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+  }
+  
+  .fade-in-img {
+	animation: fadeInImg 5s ease-in-out;
+	animation-delay: 5s;
+	animation-fill-mode: forwards;
+	opacity: 0;
+	max-width: 100%;
+	height: auto;
+  }
+  
+  @keyframes fadeInImg {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+  }
+
+  @keyframes homeGotoFade {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+  }
+
+  /* Small Screens */
+
+  .home-goto {
+	animation: homeGotoFade 5s ease-in-out;
+	animation-delay: 5s;
+	animation-fill-mode: forwards;
+	opacity: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  }
+
+
+  .link-holder {
+	display: flex;
+	gap: 2.25em;
+  }
+
+  .home-present {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+  }
+
+/* Medium & Big Screens */
+
+@media only screen and (min-width: 600px) {
+
+
+.fade-in-img {
+	
+	display: block;
+	margin: 0 auto;
+	max-width: 40%
+	
+  }
+
+  
+
+}

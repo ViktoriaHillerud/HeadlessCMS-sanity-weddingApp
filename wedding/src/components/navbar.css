@@ -1,0 +1,18 @@
+.header {
+	display: flex;
+	justify-content: center;
+	gap: 2em;
+	height: 50px;
+	margin-top: 2em;
+}
+
+.navBtn {
+	text-decoration: none;
+	color:rgb(25, 113, 85);
+	font-weight: 600;
+	font-size: x-large;
+}
+
+a:hover {
+	color:rgba(25, 113, 85, 0.603);
+}

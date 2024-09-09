@@ -1,0 +1,185 @@
+.greetings {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.greet-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 2em;
+}
+
+.greet-site {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 2em;
+}
+
+.the-greeting {
+margin-bottom: -5px;
+font-style: italic;
+}
+
+.error {
+	align-self: center;
+	color: red;
+	font-weight: 500;
+}
+
+.uploader {
+font-size: small;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	width: 70%;
+	gap:1em
+}
+
+.form button {
+	
+	align-self: center;
+}
+
+.form .uploader-name {
+	width: 55%;
+		}
+
+/* The Modal Background */
+.modal {
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.9);
+  }
+  
+  /* Modal Content (image) */
+  .modal-content {
+	max-width: 95%;
+	max-height: 100%;
+	animation-name: zoom;
+	animation-duration: 0.6s;
+  }
+
+  .nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 1001;
+    user-select: none;
+}
+
+.nav.prev {
+    left: 10px;
+	font-size: 70px;
+}
+
+.nav.next {
+    right: 10px;
+	font-size: 70px;
+}
+
+.nav {
+    display: none;
+}
+
+.modal .nav {
+    display: block;
+}
+  
+
+  @keyframes zoom {
+	from {transform: scale(0);}
+	to {transform: scale(1);}
+  }
+
+  .close {
+	position: absolute;
+	top: 120px;
+	right: 20px;
+	color: #f1f1f1;
+	font-size: 70px;
+	transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+	color: #bbb;
+	text-decoration: none;
+	cursor: pointer;
+  }
+
+  .btn {
+	border: none;
+	height: 40px;
+	width: 100px;
+	border-radius: 5px;
+	background-color: rgba(25, 113, 85, 0.659); 
+	color: white
+  }
+
+  .btn-video {
+	border: none;
+	height: 40px;
+	width: 100px;
+	border-radius: 5px;
+	background-color: rgba(190, 118, 159, 0.659); 
+	color: white
+  }
+  
+
+  /* Medium & Big Screens */
+
+@media only screen and (min-width: 600px) {
+
+.greet-card {
+	max-width: 20%;
+}
+	.greet-collection {
+		display: flex;
+		flex-wrap: wrap;
+	
+		gap: 5em;
+		margin: 0px 40px
+	}
+	
+	.form {
+		
+		width: 30%;
+		gap:1.5em
+	}
+	
+	.form textarea {
+		height: 100px;
+	}
+
+	.form .uploader-name {
+width: 40%;
+	}
+
+	.close {
+		position: absolute;
+		top: 120px;
+		right: 3em;
+		color: #f1f1f1;
+		font-size: 70px;
+		transition: 0.3s;
+	  }
+	}
